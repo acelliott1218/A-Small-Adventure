@@ -40,7 +40,7 @@ div#text {
 /* also my addition to the tutorial,
  lets the buttons take up the whole space rather than allowing large end-gaps on big screens */
 div#option-buttons {
-    justify-content: space-between;
+    justify-content: space-evenly;
     display: flex;
     flex-wrap: wrap;
 }
