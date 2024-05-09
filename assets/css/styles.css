@@ -82,3 +82,14 @@ button#start-btn {
 .title,.subtext {
     text-align:center;
 }
+
+img {
+    max-width:50%;
+    max-height:auto;
+    margin-top:3%;
+}
+
+div#image {
+    display: flex;
+    justify-content: center;
+}
