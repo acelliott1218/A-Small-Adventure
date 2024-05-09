@@ -58,3 +58,27 @@ div#option-buttons {
 .btn:hover {
     border-color:black;
 }
+
+#landing {
+    background-color:white;
+}
+
+#start-btn {
+    position:relative;
+    position:center;
+}
+
+#button-div {
+    display: flex;
+    justify-content: center;
+}
+
+button#start-btn {
+    width: 30vw;
+    height: 5vw;
+    font-size: large;
+}
+
+.title,.subtext {
+    text-align:center;
+}
