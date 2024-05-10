@@ -51,7 +51,7 @@ const textNodes = [
     {
         id: 1,
         text: 'You\'ve arrived as a stranger in a strange land. On the floor in front of you, however, there\'s a golden coin. An old man points it out to you, saying...',
-        image: '<img src="assets/images/new years.jpg" alt="An old man">',
+        image: '<img src="assets/images/oldman.jpg" alt="An old man">',
         dialogue: `<h2 class="title">Hello there!</h2> <br> <p class="title">You're not from around here, so I'll warn you; not picking up a coin's bad luck.</p>`,
         options: [
             // these are the first stage of the game
@@ -70,7 +70,7 @@ const textNodes = [
     {
         id: 2,
         text:'As quickly as you make your decision, the old man vanishes. Alone once more, you notice a fork in the road: one path leads to a castle, the other to the woods.',
-        image: '<img src="assets/images/new years.jpg" alt="An old man">',
+        image: '<img src="assets/images/fork.jpg" alt="A fork in the road">',
         dialogue: `<p class='title'>A lingering doubt remains in your mind, how real truly is luck in this place?</p>`,
         options: [
             {
@@ -94,7 +94,7 @@ const textNodes = [
         id: 3,
         text: `You head into the forest, and it seems the instant you entered the wilderness, the trees seem to close behind you like a fortress gate.
          <br> As you keep trudging forwards, you start to hear whispers, growing louder until a voice, one with no speaker, addresses you directly.`,
-        image: '<img src="assets/images/new years.jpg" alt="An old man">',
+        image: '<img src="assets/images/forestpath.jpg" alt="An overgrown path in a dense forest, which seems to close in on you.">',
         dialogue: `<h2 class="title">Stop!</h2> <br> <p class="title">This is no place for the uninitiated, traveler. Do you have any charms, any protection?</p>`,
         options: [
             {
@@ -108,7 +108,7 @@ const textNodes = [
                 nextText: 7
             },
             {
-                text: `I really should've listened to that old man...`,
+                text: `I really should've listened to that old man... (Run for it!)`,
                 nextText: 8
             }
         ]
@@ -117,7 +117,7 @@ const textNodes = [
         id: 4,
         text: `The closer to the castle you get, the more your surroundings...change. More and more, everything but the castle reminds you of an expressionist painting. 
         <br> when you finally reach the castle, a guard stops you.`,
-        image: '<img src="assets/images/new years.jpg" alt="An old man">',
+        image: '<img src="assets/images/guard.jpg" alt="A guard in front of a castle, so foggy that you can only make out him and the castle behind him.">',
         dialogue: `<h2 class="title">Halt!</h2> <br> <p class="title">For the residents' safety, entry is barred for all but the blessed. Where is your charm?</p>`,
         options: [
             {
