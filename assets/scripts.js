@@ -69,61 +69,71 @@ const textNodes = [
     },
     {
         id: 2,
-        text:'You venture forth in search of answers to where you are when you come across a merchant',
+        text:'As quickly as you make your decision, the old man vanishes. Alone once more, you notice a fork in the road: one path leads to a castle, the other to the woods.',
         image: '<img src="assets/images/new years.jpg" alt="An old man">',
-        dialogue: `<h2 class="title">Hello there!</h2> <br> <p class="title">You're not from around here, so I'll warn you; not picking up a coin's bad luck.</p>`,
+        dialogue: `<p class='title'>A lingering doubt remains in your mind, how real truly is luck in this place?</p>`,
         options: [
             {
-                text: 'Trade the goo for a sword',
-                // requires the user to have taken the blue goo
-                requiredState: (currentState) => currentState.coin,
-                setState: {coin: false, sword: true},
+                text: 'Head towards the forest',
+                setState: {forest: true},
                 nextText: 3
             },
             {
-                text: 'Trade the goo for a shield',
-                // requires the user to have taken the blue goo
-                requiredState: (currentState) => currentState.coin,
-                setState:{coin: false, shield: true},
-                nextText: 3
+                text: 'Head towards the castle',
+                setState: {castle: true},
+                nextText: 4
             },
             {
-                // this is the option if the user has no goo to trade
-                text: 'Ignore the merchant',
-                setState:{coin: false, badLuck:true, sword: false},
-                nextText: 3,
+                text: 'Turn back towards town',
+                setState: {grove:true},
+                nextText: 5
             }
         ]
     },
     {
         id: 3,
-        text: 'After leaving you find a castle',
+        text: `You head into the forest, and it seems the instant you entered the wilderness, the trees seem to close behind you like a fortress gate.
+         <br> As you keep trudging forwards, you start to hear whispers, growing louder until a voice, one with no speaker, addresses you directly.`,
         image: '<img src="assets/images/new years.jpg" alt="An old man">',
-        dialogue: `<h2 class="title">Hello there!</h2> <br> <p class="title">You're not from around here, so I'll warn you; not picking up a coin's bad luck.</p>`,
+        dialogue: `<h2 class="title">Stop!</h2> <br> <p class="title">This is no place for the uninitiated, traveler. Do you have any charms, any protection?</p>`,
         options: [
             {
-                text: 'explore',
-                nextText: 4
-            },
-            {
-                text: 'find a room to sleep in',
-                nextText: 5
-            },
-            {
-                text:'sleep on the ground like some kind of animal',
+                text: 'A charm? Uhh, like this coin?',
+                requiredState: (currentState) => currentState.coin,
                 nextText: 6
+            },
+            {
+                text: `I got a charm from the grove, I'll be fine!`,
+                requiredState: (currentState) => currentState.charm,
+                nextText: 7
+            },
+            {
+                text: `I really should've listened to that old man...`,
+                nextText: 8
             }
         ]
     },
     {
         id: 4,
-        text: 'You fall asleep and die',
+        text: `The closer to the castle you get, the more your surroundings...change. More and more, everything but the castle reminds you of an expressionist painting. 
+        <br> when you finally reach the castle, a guard stops you.`,
         image: '<img src="assets/images/new years.jpg" alt="An old man">',
-        dialogue: `<h2 class="title">Hello there!</h2> <br> <p class="title">You're not from around here, so I'll warn you; not picking up a coin's bad luck.</p>`,
+        dialogue: `<h2 class="title">Halt!</h2> <br> <p class="title">For the residents' safety, entry is barred for all but the blessed. Where is your charm?</p>`,
         options: [
             {
-                text: 'Retry?',
-                nextText: 1
+                text: 'Maybe I can just pay an entry fee?',
+                requiredState:(currentState) => currentState.coin,
+                nextText: 9
+            },
+            {
+                text: 'I actually just got a charm from the grove, see?',
+                requiredState:(currentState) => currentState.charm,
+                nextText: 10
+            },
+            {
+                text: `I'm getting in there one way or another! (fight)`,
+                requiredState:(currentState) => currentState.coin,
+                nextText: 11
             }
         ],
     },
