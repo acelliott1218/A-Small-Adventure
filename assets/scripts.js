@@ -2,16 +2,8 @@ const textElement = document.getElementById("text");
 const dialogueElement = document.getElementById("dialogue")
 const imageElement = document.getElementById("image")
 const optionButtonsElement = document.getElementById("option-buttons")
-const statUpElement = document.getElementsByClassName("stat-up")
-const statDownElement = document.getElementsByClassName("stat-up")
 
 let state = {}
-let stats = {
-    Strength:0,
-    Speed:0,
-    Speech:0,
-}
-
 
 //**starts the game when called */ 
 function startGame(){
@@ -39,7 +31,6 @@ function showTextNode(textNodeIndex) {
     })
 }
 
-
 //**reveals options on click if the correct conditions are met */
 function showOption(option){
     return option.requiredState == null || option.requiredState(state);
@@ -51,9 +42,6 @@ function selectOption(option) {
     state = Object.assign(state, option.setState)
     showTextNode(nextTextNodeId)
   }
-
-
-
 
 // this variable acts sort of like a function, but is required to circumvent excessive "if-else" statements. 
 // It's on this line to help the flow/readability of the code
