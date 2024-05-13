@@ -2,8 +2,16 @@ const textElement = document.getElementById("text");
 const dialogueElement = document.getElementById("dialogue")
 const imageElement = document.getElementById("image")
 const optionButtonsElement = document.getElementById("option-buttons")
+const statUpElement = document.getElementsByClassName("stat-up")
+const statDownElement = document.getElementsByClassName("stat-up")
 
 let state = {}
+let stats = {
+    Strength:0,
+    Speed:0,
+    Speech:0,
+}
+
 
 //**starts the game when called */ 
 function startGame(){
@@ -38,11 +46,13 @@ function showOption(option){
 }
 
 //**Allows users to select options, harmonizes user choices */
-function selectOption(option){
-    const nextTextNodeId = option.nextText;
-    state = Object.assign(state, option.setState);
-    showTextNode(nextTextNodeId);
-}
+function selectOption(option) {
+    const nextTextNodeId = option.nextText
+    state = Object.assign(state, option.setState)
+    showTextNode(nextTextNodeId)
+  }
+
+
 
 
 // this variable acts sort of like a function, but is required to circumvent excessive "if-else" statements. 
@@ -107,6 +117,7 @@ const textNodes = [
                 requiredState: (currentState) => currentState.charm,
                 nextText: 7
             },
+            
             {
                 text: `I really should've listened to that old man... (Run for it!)`,
                 nextText: 8
@@ -123,7 +134,8 @@ const textNodes = [
             {
                 text: 'Maybe I can just pay an entry fee?',
                 requiredState:(currentState) => currentState.coin,
-                nextText: 9
+                setState:{coin: false},
+                nextText: 5
             },
             {
                 text: 'I actually just got a charm from the grove, see?',
@@ -137,6 +149,18 @@ const textNodes = [
             }
         ],
     },
+    {
+        id: 5,
+        text: `placeholder`,
+        image: 'placeholder',
+        dialogue: `placeholder`,
+        options: [
+            {
+                text: 'Testing?',
+                nextText: 1
+            },
+        ]
+    }
 ]
 
 startGame()

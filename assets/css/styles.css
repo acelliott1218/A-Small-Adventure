@@ -93,3 +93,12 @@ div#image {
     display: flex;
     justify-content: center;
 }
+
+div#stats {
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+p.stat-text {
+    text-align: center;
+}
