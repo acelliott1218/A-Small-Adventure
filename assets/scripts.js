@@ -50,7 +50,7 @@ function selectOption(option) {
     inventory.push(a)
   }
 
-  //**this function is called when items are removed from the inventory, credit to this Sree.Bh for the initial code https://stackoverflow.com/questions/62475521/splicing-first-object-returns-typeerror-cannot-read-property-of-undefined */ 
+  //**this function is called when items are removed from the inventory, credit to mss for initial code https://stackoverflow.com/questions/65794581/array-function-with-indexof-and-splice */ 
   function delItem(a) {
     i = inventory.indexOf(a);
   
