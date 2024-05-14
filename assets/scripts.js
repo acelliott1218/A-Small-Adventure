@@ -236,7 +236,7 @@ const textNodes = [{
         image: 'placeholder',
         dialogue: `<p>Though heavily wooded, the unnerving forest in front of you would merit exploration. What should you do?</p>`,
         options: [{
-                text: `<p>Let's play it safe, I'm outta here!</p>`,
+                text: `<p>Let's play it safe, I'm getting out of here! <br>(Go to castle)</p>`,
                 nextText: 4,
                 setState: {
                     noExplore: true
@@ -260,7 +260,6 @@ const textNodes = [{
             },
         ]
     },
-    // placeholder templates below this line
     {
         id: 7,
         text: `<p>The guard lets you past, and after entering the blur increases to such a point that you can't see any of the castle's surroundings. With no other options, you decide to enter the castle.</p>`,
@@ -292,7 +291,7 @@ const textNodes = [{
         ]
     },
     {
-        id: 0,
+        id: 8,
         text: ``,
         image: 'placeholder',
         dialogue: ``,
@@ -317,7 +316,7 @@ const textNodes = [{
         ]
     },
     {
-        id: 0,
+        id: 9,
         text: ``,
         image: 'placeholder',
         dialogue: ``,
@@ -342,7 +341,7 @@ const textNodes = [{
         ]
     },
     {
-        id: 0,
+        id: 10,
         text: ``,
         image: 'placeholder',
         dialogue: ``,
@@ -367,7 +366,7 @@ const textNodes = [{
         ]
     },
     {
-        id: 0,
+        id: 11,
         text: ``,
         image: 'placeholder',
         dialogue: ``,
@@ -392,7 +391,7 @@ const textNodes = [{
         ]
     },
     {
-        id: 0,
+        id: 12,
         text: ``,
         image: 'placeholder',
         dialogue: ``,
@@ -417,7 +416,7 @@ const textNodes = [{
         ]
     },
     {
-        id: 0,
+        id: 13,
         text: ``,
         image: 'placeholder',
         dialogue: ``,
@@ -442,7 +441,7 @@ const textNodes = [{
         ]
     },
     {
-        id: 0,
+        id: 14,
         text: ``,
         image: 'placeholder',
         dialogue: ``,
@@ -467,7 +466,7 @@ const textNodes = [{
         ]
     },
     {
-        id: 0,
+        id: 15,
         text: ``,
         image: 'placeholder',
         dialogue: ``,
@@ -492,7 +491,7 @@ const textNodes = [{
         ]
     },
     {
-        id: 0,
+        id: 16,
         text: ``,
         image: 'placeholder',
         dialogue: ``,
@@ -517,7 +516,7 @@ const textNodes = [{
         ]
     },
     {
-        id: 0,
+        id: 17,
         text: ``,
         image: 'placeholder',
         dialogue: ``,
@@ -542,7 +541,7 @@ const textNodes = [{
         ]
     },
     {
-        id: 0,
+        id: 18,
         text: ``,
         image: 'placeholder',
         dialogue: ``,
@@ -567,7 +566,7 @@ const textNodes = [{
         ]
     },
     {
-        id: 0,
+        id: 19,
         text: ``,
         image: 'placeholder',
         dialogue: ``,
@@ -592,7 +591,7 @@ const textNodes = [{
         ]
     },
     {
-        id: 0,
+        id: 20,
         text: ``,
         image: 'placeholder',
         dialogue: ``,
