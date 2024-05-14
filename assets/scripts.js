@@ -187,7 +187,8 @@ const textNodes = [{
                 nextText: 7,
                 setState: {
                     foughtGuard: true,
-                }
+                },
+                requiredState:(currentState) => currentState.coin,
             },
             {
             text: `I'm getting in there one way or another! (fight)`,
@@ -207,7 +208,7 @@ const textNodes = [{
         image: 'placeholder',
         dialogue: `You're alone with your thoughts, you're sure of it...but then there's an amulet on the ground. What do you do?`,
         options: [{
-                text: `<p onclick="addInventory('charm'),showItem('charm')"">Pick up the amulet</p>`,
+                text: `<p onclick="addInventory('charm'),showItem('charm')">Pick up the amulet</p>`,
                 nextText: 2,
                 setState: {
                     charm: true,
@@ -291,251 +292,194 @@ const textNodes = [{
         ]
     },
     {
+        // exploration scene
         id: 8,
-        text: ``,
+        text: `As you venture deeper into the wilderness, you lose sight of the trail entirely. The voices return, indecipherable, and grow louder as you go deeper.`,
         image: 'placeholder',
-        dialogue: ``,
+        dialogue: `What should you do?`,
         options: [{
-                text: `<p></p>`,
-                nextText: 2,
-                setState: {},
-                requiredState: (currentState) => currentState.state
+                text: `<p>There's no way back, I have no choice but to go further.</p>`,
+                nextText: 12
             },
             {
-                text: `<p></p>`,
-                nextText: 2,
-                setState: {},
-                requiredState: (currentState) => currentState.state
-            },
-            {
-                text: `<p></p>`,
-                nextText: 2,
-                setState: {},
-                requiredState: (currentState) => currentState.state
+                text: `<p>Try to listen to the voices more...</p>`,
+                nextText: 13,
             },
         ]
     },
     {
+        // throne-room scene
         id: 9,
-        text: ``,
+        text: `As you enter the throne room, you find the first other person here since the guard. A sullen figure sits on the throne in front of you.`,
         image: 'placeholder',
-        dialogue: ``,
+        dialogue: `I can smell the old world on you, that chaos of untamed chance. Let me tell you, stranger, those charms are the only reason you've even survived thus far.`,
         options: [{
-                text: `<p></p>`,
-                nextText: 2,
-                setState: {},
-                requiredState: (currentState) => currentState.state
+                text: `<p>I already got past your guards, now it's your turn!</p>`,
+                nextText: 14,
+                setState: {usurper:true},
+                requiredState: (currentState) => currentState.foughtGuard,
+                requiredState: (currentState) => currentState.coin,
+                requiredState: (currentState) => currentState.charm,
+                requiredState: (currentState) => currentState.foot,
+                requiredState: (currentState) => currentState.tooth,
+                requiredState: (currentState) => currentState.eye
+
             },
             {
-                text: `<p></p>`,
-                nextText: 2,
-                setState: {},
-                requiredState: (currentState) => currentState.state
-            },
-            {
-                text: `<p></p>`,
-                nextText: 2,
-                setState: {},
-                requiredState: (currentState) => currentState.state
+                text: `<p>Untamed chance? What do you mean?</p>`,
+                nextText: 15,
             },
         ]
     },
     {
+        // kitchen scene
         id: 10,
-        text: ``,
+        text: `The kitchen, just like the previous room, is empty. You look around...`,
         image: 'placeholder',
-        dialogue: ``,
+        dialogue: `After getting a good look of things, you decide to...`,
         options: [{
-                text: `<p></p>`,
-                nextText: 2,
-                setState: {},
-                requiredState: (currentState) => currentState.state
+                text: `<p onclick="showItem('tooth'),addInventory('tooth')">There's no food here, but they seem big on luck. Maybe that tooth could be useful?</p>`,
+                nextText: 16,
+                setState: {tooth:true},
             },
             {
-                text: `<p></p>`,
-                nextText: 2,
-                setState: {},
-                requiredState: (currentState) => currentState.state
+                text: `<p>Read an old recipe book</p>`,
+                nextText: 16,
+                setState: {recipe:true},
             },
-            {
-                text: `<p></p>`,
-                nextText: 2,
-                setState: {},
-                requiredState: (currentState) => currentState.state
-            },
+
         ]
     },
     {
+        // lucky castle wake-up scene
         id: 11,
-        text: ``,
+        text: `Upon waking up, you find out one of your eyes is missing! Great way to wake up in the morning.`,
         image: 'placeholder',
-        dialogue: ``,
+        dialogue: `Do you try and find who did it, or will you continue exploring?`,
         options: [{
-                text: `<p></p>`,
-                nextText: 2,
-                setState: {},
-                requiredState: (currentState) => currentState.state
+                text: `<p>Head to the throne room</p>`,
+                nextText: 9,
             },
             {
-                text: `<p></p>`,
-                nextText: 2,
-                setState: {},
-                requiredState: (currentState) => currentState.state
+                text: `<p>Head to the kitchen</p>`,
+                nextText: 10,
             },
             {
-                text: `<p></p>`,
-                nextText: 2,
-                setState: {},
-                requiredState: (currentState) => currentState.state
+                text: `<p>Forget exploring, I need to get my eye!</p>`,
+                nextText: 17,
             },
         ]
     },
+    // meeting the forest spirit
     {
         id: 12,
-        text: ``,
+        text: `It's the second person you've ever met here, and it's hard to call it a "person". Before you stands a hulking beast, with a deer's skull for a head. Despite its appearance, though, you can tell it means no harm`,
         image: 'placeholder',
-        dialogue: ``,
+        dialogue: `The being says: "You're a long way from home, I can tell, but where you stand now is closer to home...though not quite. Fortune and misfortune live in opposite dimensions in most of this realm, but they merge here. That's the voice from before!"`,
         options: [{
-                text: `<p></p>`,
-                nextText: 2,
-                setState: {},
-                requiredState: (currentState) => currentState.state
+                text: `<p>Wait, if things are by chance here, why did you tell me I needed a charm?</p>`,
+                nextText: 18,
             },
             {
-                text: `<p></p>`,
-                nextText: 2,
-                setState: {},
-                requiredState: (currentState) => currentState.state
-            },
-            {
-                text: `<p></p>`,
-                nextText: 2,
-                setState: {},
-                requiredState: (currentState) => currentState.state
+                text: `<p>Can I stay here forever?</p>`,
+                nextText: 19,
             },
         ]
     },
+    // voices scene
     {
         id: 13,
-        text: ``,
+        text: `The voices become almost, but not quite, intelligable as you focus on listening. They sound like buzzing, growing louder and louder, at the same rate they become clear.`,
         image: 'placeholder',
-        dialogue: ``,
+        dialogue: `"I can almost understand what they're saying..."`,
         options: [{
-                text: `<p></p>`,
-                nextText: 2,
-                setState: {},
-                requiredState: (currentState) => currentState.state
+                text: `<p>Keep listening, I'm so close!</p>`,
+                nextText: 20,
+                setState: {madness:true},
             },
             {
-                text: `<p></p>`,
-                nextText: 2,
-                setState: {},
-                requiredState: (currentState) => currentState.state
-            },
-            {
-                text: `<p></p>`,
-                nextText: 2,
-                setState: {},
-                requiredState: (currentState) => currentState.state
+                text: `<p>Snap out of it and go further into the woods</p>`,
+                nextText: 12,
             },
         ]
     },
+    // first part of the hidden ending
     {
         id: 14,
-        text: ``,
+        text: `This being, who you could only assume was the king, folds in an instant -- a corpse at first, and then nothing at all.`,
         image: 'placeholder',
-        dialogue: ``,
+        dialogue: `A force compels you to sit on the throne...`,
         options: [{
-                text: `<p></p>`,
-                nextText: 2,
-                setState: {},
-                requiredState: (currentState) => currentState.state
-            },
-            {
-                text: `<p></p>`,
-                nextText: 2,
-                setState: {},
-                requiredState: (currentState) => currentState.state
-            },
-            {
-                text: `<p></p>`,
-                nextText: 2,
-                setState: {},
-                requiredState: (currentState) => currentState.state
+                text: `<p>Take a seat...</p>`,
+                nextText: 21
             },
         ]
     },
+    // dialogue with the king
     {
         id: 15,
-        text: ``,
+        text: `"In the old days, and I can only assume where you're from, fortune and misfortune could fall at random. A long, long time ago, I separated the two entirely -- luck thrives uninterrupted.`,
         image: 'placeholder',
-        dialogue: ``,
+        dialogue: `You can tell he's telling the truth, it must be why the old man told you to pick up the coin. Still, you can practically feel -- physically -- the misery and regret in his voice.`,
         options: [{
-                text: `<p></p>`,
-                nextText: 2,
-                setState: {},
-                requiredState: (currentState) => currentState.state
+                text: `<p>"If we both disregard our charms, though, won't that bring things back to normal?"</p>`,
+                nextText: 22,
             },
             {
-                text: `<p></p>`,
-                nextText: 2,
-                setState: {},
-                requiredState: (currentState) => currentState.state
+                text: `<p>That sounds like hell. I want out of this place!</p>`,
+                nextText: 23,
             },
             {
-                text: `<p></p>`,
-                nextText: 2,
-                setState: {},
-                requiredState: (currentState) => currentState.state
+                text: `<p>Why did you do it?</p>`,
+                nextText: 24,
             },
         ]
     },
+    // meeting the chef
     {
         id: 16,
-        text: ``,
+        text: `As you finish snooping around, a man bursts into the kitchen! From his outfit and general look, it's clear he's the chef.`,
         image: 'placeholder',
-        dialogue: ``,
+        dialogue: `"What do you think you're doing here! Get out -- now!`,
         options: [{
-                text: `<p></p>`,
-                nextText: 2,
-                setState: {},
-                requiredState: (currentState) => currentState.state
+                text: `<p>"Wait! I can help you with the food!</p>`,
+                nextText: 25,
+                setState: {apprenticeChef:true},
+                requiredState: (currentState) => currentState.recipe
             },
             {
-                text: `<p></p>`,
-                nextText: 2,
-                setState: {},
-                requiredState: (currentState) => currentState.state
+                text: `<p>I'm outta here!</p>`,
+                nextText: 7,
             },
             {
-                text: `<p></p>`,
-                nextText: 2,
-                setState: {},
-                requiredState: (currentState) => currentState.state
+                text: `<p>Grab a knife and stab him!</p>`,
+                nextText: 26,
+                setState: {murderer:true},
+                requiredState: (currentState) => currentState.foughtGuard
             },
         ]
     },
+    // meeting the apothecary
     {
         id: 17,
-        text: ``,
+        text: `After what feels like hours of searching, you come across a lone room. Upon opening the door, you find none other than the apothecary! He drops your eye into a concoction as you enter. However, he doesn't seem that malice, just very...dedicated.`,
         image: 'placeholder',
-        dialogue: ``,
+        dialogue: `"A thousand apologies, but being an outlander...well, your eye made for a quite potent reagent. Still, you need to see, and I have this crystal eye that can do the job just as well! It's lucky, too.`,
         options: [{
-                text: `<p></p>`,
-                nextText: 2,
-                setState: {},
-                requiredState: (currentState) => currentState.state
+                text: `<p>"Everything is 'lucky' here. Fine, I'll take it.</p>`,
+                nextText: 27,
+                setState: {eye:true},
             },
             {
-                text: `<p></p>`,
-                nextText: 2,
-                setState: {},
-                requiredState: (currentState) => currentState.state
+                text: `<p>"No way, I'm getting payback!"</p>`,
+                nextText: 26,
+                setState: {killer:true},
+                requiredState: (currentState) => currentState.foughtGuard
             },
             {
-                text: `<p></p>`,
-                nextText: 2,
-                setState: {},
+                text: `<p>Grab the potion! If he made it with your eye, it should be yours.</p>`,
+                nextText: 28,
+                setState: {potion:true},
                 requiredState: (currentState) => currentState.state
             },
         ]
