@@ -184,12 +184,20 @@ const textNodes = [{
             },
             {
                 text: `I'm getting in there one way or another! (fight)`,
-                nextText: -1,
+                nextText: 7,
                 setState: {
                     foughtGuard: true,
-                    died: true
                 }
+            },
+            {
+            text: `I'm getting in there one way or another! (fight)`,
+            nextText: -1,
+            requiredState:(currentState) => currentState.badLuck,
+            setState: {
+                foughtGuard: true,
+                died: true
             }
+        }
         ],
     },
     {
