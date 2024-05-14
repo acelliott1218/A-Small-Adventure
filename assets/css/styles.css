@@ -93,3 +93,19 @@ div#image {
     display: flex;
     justify-content: center;
 }
+
+
+
+#inventory-images {
+    background-color: saddlebrown;
+    max-width: 7rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-width:5rem;
+    box-shadow: 4px -9px 10px 2px;
+}
+
+.items {
+    visibility:hidden;
+}

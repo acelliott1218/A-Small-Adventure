@@ -61,6 +61,15 @@ function selectOption(option) {
     }
   }
   
+  /**shows the acquired items in the player's inventory on the other page */
+  function showItem(a){
+    document.getElementById(a).style.visibility="visible"
+  }
+
+  /**hides the acquired items again, usually after they've been expended */
+  function hideItem(a){
+    document.getElementById(a).style.visibility="hidden"
+  }
 // this variable acts sort of like a function, but is required to circumvent excessive "if-else" statements. 
 // It's on this line to help the flow/readability of the code
 const textNodes = [
@@ -72,7 +81,7 @@ const textNodes = [
         options: [
             // these are the first stage of the game
             {
-                text: `<p onclick="addInventory('coin')">Take the coin from the ground</p>`,
+                text: `<p onclick="addInventory('coin'),showItem('coin')">Take the coin from the ground</p>`,
                 setState:{coin: true, gotCoin:true, noGrove:true},
                 nextText: 2,
             },
@@ -117,9 +126,9 @@ const textNodes = [
         dialogue: `<h2 class="title">Stop!</h2> <br> <p class="title">This is no place for the uninitiated, traveler. Do you have any charms, any protection?</p>`,
         options: [
             {
-                text: `<p onclick="delItem('coin')">A charm? Like this?</p>`,
+                text: `<p onclick="delItem('coin'),hideItem('coin')">A charm? Like this?</p>`,
                 requiredState: (currentState) => currentState.coin,
-                nextText: 5,
+                nextText: 6,
                 setState:{coin:false}
             },
             {
@@ -143,7 +152,7 @@ const textNodes = [
         dialogue: `<h2 class="title">Halt!</h2> <br> <p class="title">For the residents' safety, entry is barred for all but the blessed. Where is your charm?</p>`,
         options: [
             {
-                text: `<p onclick="delItem('coin')">Maybe I can just pay an entry fee?</p>`,
+                text: `<p onclick="delItem('coin'),hideItem('coin')">Maybe I can just pay an entry fee?</p>`,
                 requiredState:(currentState) => currentState.coin,
                 setState:{coin: false},
                 nextText: 8
@@ -164,13 +173,13 @@ const textNodes = [
     },
     {
         // this is the grove scene, and will take the player back to the crossroads.
-        id: 20,
+        id: 5,
         text: `You decide to head back towards town, maybe the old man is there somewhere? But as you do so, you see an empty grove.`,
         image: 'placeholder',
         dialogue: `You're alone with your thoughts, you're sure of it...but then there's an amulet on the ground. What do you do?`,
         options: [
             {
-                text: 'Pick up the charmed amulet',
+                text: `<p onclick="addInventory('charm'),showItem('charm')"">Pick up the amulet</p>`,
                 nextText: 2,
                 setState: {charm:true, goodLuck:true, badLuck:false, pickedUpCharm:true, wentToGrove:true, noGrove:false}
             },
