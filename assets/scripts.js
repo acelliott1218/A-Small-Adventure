@@ -593,28 +593,12 @@ const textNodes = [{
                 requiredState: (currentState) => currentState.potion
             },
             {
-                text: `<p>Fight back</p>`,
-                nextText: -1,
-                setState: {
-                    died: true,
-                    lostFight: true
-                },
-            },
-            {
                 text: `<p>Try to escape</p>`,
                 nextText: -1,
                 setState: {
                     died: true,
                     fledFight: true
                 },
-            },
-            {
-                text: `<p>Try to escape</p>`,
-                nextText: 2,
-                setState: {
-                    fledFight: true
-                },
-                requiredState: (currentState) => currentState.foot
             },
         ]
     },
