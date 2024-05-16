@@ -804,7 +804,7 @@ const textNodes = [{
         image: '<img src=assets/images/logo.jpg alt="The game logo, black and white with lucky symbols on one side, unlucky ones on the other">',
         dialogue: ``,
         options: [{
-            text: `<a href="index.html">Summary</a>`,
+            text: `<a href="index.html">Try again</a>`,
 
         }, ]
     },
