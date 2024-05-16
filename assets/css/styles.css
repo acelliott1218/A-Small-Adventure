@@ -115,6 +115,7 @@ button#replay-btn {
     width: 100%;
 }
 
-#no-decoration{
+a:visited{
     text-decoration:none;
+    color:white;
 }
