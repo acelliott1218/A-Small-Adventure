@@ -104,7 +104,9 @@ const textNodes = [{
                 setState: {
                     coin: true,
                     gotCoin: true,
-                    noGrove: true
+                    noGrove: true,
+                    kitchenAccess:true,
+                    canSleep:true
                 },
                 nextText: 2,
             },
@@ -113,7 +115,9 @@ const textNodes = [{
                 setState: {
                     badLuck: true,
                     hadBadLuck: true,
-                    noGrove: true
+                    noGrove: true,
+                    kitchenAccess:true,
+                    canSleep:true
                 },
                 nextText: 2,
             }
@@ -283,6 +287,7 @@ const textNodes = [{
             {
                 text: `<p>Let's check the kitchen, I'm getting hungry.</p>`,
                 nextText: 10,
+                requiredState: (currentState) => currentState.kitchenAccess
             },
             {
                 text: `<p>I'm tired, let's find somewhere to sleep</p>`,
@@ -295,6 +300,7 @@ const textNodes = [{
             {
                 text: `<p>I'm tired, let's find somewhere to sleep</p>`,
                 nextText: 11,
+                requiredState: (currentState) => currentState.canSleep
             }
         ]
     },
@@ -345,7 +351,8 @@ const textNodes = [{
                 text: `<p onclick="showItem('tooth'),addInventory('tooth')">There's no food here, but they seem big on luck. Maybe that tooth could be useful?</p>`,
                 nextText: 16,
                 setState: {
-                    tooth: true
+                    tooth: true,
+                    kitchenAccess:false
                 },
             },
             {
@@ -367,14 +374,17 @@ const textNodes = [{
         options: [{
                 text: `<p>Head to the throne room</p>`,
                 nextText: 9,
+                setState:{canSleep:false}
             },
             {
                 text: `<p>Head to the kitchen</p>`,
                 nextText: 10,
+                setState:{canSleep:false}
             },
             {
                 text: `<p>Forget exploring, I need to get my eye!</p>`,
                 nextText: 17,
+                setState:{canSleep:false}
             },
         ]
     },
