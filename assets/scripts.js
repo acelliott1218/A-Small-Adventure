@@ -18,6 +18,8 @@ function startGame() {
 
 /***
  * shows a particular text node in relation to user input, while hiding others 
+ * sets the innerHTML of baseline elements to be dependant on the keys of the textNode object
+ * sets the button HTML in a similar way
  * */
 function showTextNode(textNodeIndex) {
     const textNode = textNodes.find(textNode => textNode.id === textNodeIndex);
