@@ -1,4 +1,4 @@
-# Project 2 - ROCHAMBEAU! TESTING
+# Project 2 - A Small Adventure TESTING
 
 ## Contents
 - [Automated Testing](#automated-testing)
