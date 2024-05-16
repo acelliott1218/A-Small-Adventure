@@ -119,7 +119,7 @@ HTML, CSS and Javascript were used to create this website.
 ---
 
 ## ***Testing***
-Please [click](https://github.com/TommySpecs/rock-paper-scissors-lizard-spock/blob/main/testing.md) to visit the testing page.
+Please [click](https://github.com/acelliott1218/A-Small-Adventure/blob/main/testing.md) to visit the testing page.
 
 ---
 
@@ -131,8 +131,12 @@ Please [click](https://github.com/TommySpecs/rock-paper-scissors-lizard-spock/bl
 ### *Content*
 - https://www.color-hex.com/color-palette/15897 - colour scheme
 - https://www.youtube.com/watch?v=R1S_NhKkvGA - project built from this basis
-- 
+- https://github.com/TommySpecs/rock-paper-scissors-lizard-spock/tree/main -- basis for the README page
 
 
 ### *Media*
 - https://www.bing.com/?toWww=1&redig=B9CB799792EF45A9AD75867943974B67 - media
+
+## ***Development Issues***
+
+The quality of this project is not up to my usual standards, this is due to various life events tearing away my focus and not even allowing me the time to set up mentoring sessions. If I had more time, I would have overhauled the way the game works to use something other than the textNode system.
