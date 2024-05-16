@@ -8,13 +8,17 @@ const optionButtonsElement = document.getElementById("option-buttons");
 let state = {};
 let inventory = ['pocket lint'];
 
-//**starts the game when called */ 
+/**
+*starts the game when called
+ */ 
 function startGame() {
     state = {};
     showTextNode(1);
 }
 
-//**shows a particular text node in relation to user input, while hiding others */
+/***
+ * shows a particular text node in relation to user input, while hiding others 
+ * */
 function showTextNode(textNodeIndex) {
     const textNode = textNodes.find(textNode => textNode.id === textNodeIndex);
     console.log(textNode);
@@ -35,24 +39,32 @@ function showTextNode(textNodeIndex) {
     });
 }
 
-//**reveals options on click if the correct conditions are met */
+/**
+*reveals options on click if the correct conditions are met
+ */
 function showOption(option) {
     return option.requiredState == null || option.requiredState(state);
 }
 
-//**Allows users to select options, harmonizes user choices */
+/**
+ * Allows users to select options, harmonizes user choices 
+ * */
 function selectOption(option) {
     const nextTextNodeId = option.nextText;
     state = Object.assign(state, option.setState);
     showTextNode(nextTextNodeId);
 }
 
-//**this function is called when new items are added to the inventory */ 
+/**
+*this function is called when new items are added to the inventory
+ */ 
 function addInventory(a) {
     inventory.push(a);
 }
 
-//**this function is called when items are removed from the inventory, credit to mss for initial code https://stackoverflow.com/questions/65794581/array-function-with-indexof-and-splice */ 
+/**
+*this function is called when items are removed from the inventory, credit to mss for initial code https://stackoverflow.com/questions/65794581/array-function-with-indexof-and-splice 
+*/ 
 function delItem(a) {
     i = inventory.indexOf(a);
 
@@ -63,12 +75,16 @@ function delItem(a) {
     }
 }
 
-/**shows the acquired items in the player's inventory on the other page */
+/**
+ * shows the acquired items in the player's inventory on the other page 
+*/
 function showItem(a) {
     document.getElementById(a).style.visibility = "visible";
 }
 
-/**hides the acquired items again, usually after they've been expended */
+/** 
+*hides the acquired items again, usually after they've been expended 
+*/
 function hideItem(a) {
     document.getElementById(a).style.visibility = "hidden";
 }
