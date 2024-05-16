@@ -212,7 +212,7 @@ const textNodes = [{
         // this is the grove scene, and will take the player back to the crossroads.
         id: 5,
         text: `You decide to head back towards town, maybe the old man is there somewhere? But as you do so, you see an empty grove.`,
-        image: 'placeholder',
+        image: '<img src=assets/images/logo.jpg>',
         dialogue: `You're alone with your thoughts, you're sure of it...but then there's an amulet on the ground. What do you do?`,
         options: [{
                 text: `<p onclick="addInventory('charm'),showItem('charm')">Pick up the amulet</p>`,
@@ -241,7 +241,7 @@ const textNodes = [{
     {
         id: 6,
         text: `<p>Satisfied you're safe, at least safe enough, to enter deeper into the forests, the voices subside. Suddenly, the life of a forest returns!</p>`,
-        image: 'placeholder',
+        image: '<img src=assets/images/logo.jpg>',
         dialogue: `<p>Though heavily wooded, the unnerving forest in front of you would merit exploration. What should you do?</p>`,
         options: [{
                 text: `<p>Let's play it safe, I'm getting out of here! <br>(Go to castle)</p>`,
@@ -271,7 +271,7 @@ const textNodes = [{
     {
         id: 7,
         text: `<p>After entering the blur increases to such a point that you can't see any of the castle's surroundings. With no other options, you decide to enter the castle.</p>`,
-        image: `placeholder`,
+        image: `<img src=assets/images/logo.jpg>`,
         dialogue: `<p>You seem to be totally alone. Weren't there supposed to be other people here? Something's up...</p>`,
         options: [{
                 text: `<p>If anywhere in here has people, it's gonna be the throne room.</p>`,
@@ -302,7 +302,7 @@ const textNodes = [{
         // exploration scene
         id: 8,
         text: `As you venture deeper into the wilderness, you lose sight of the trail entirely. The voices return, indecipherable, and grow louder as you go deeper.`,
-        image: 'placeholder',
+        image: '<img src=assets/images/logo.jpg>',
         dialogue: `What should you do?`,
         options: [{
                 text: `<p>There's no way back, I have no choice but to go further.</p>`,
@@ -318,7 +318,7 @@ const textNodes = [{
         // throne-room scene
         id: 9,
         text: `As you enter the throne room, you find the first other person here since the guard. A sullen figure sits on the throne in front of you.`,
-        image: 'placeholder',
+        image: '<img src=assets/images/logo.jpg>',
         dialogue: `I can smell the old world on you, that chaos of untamed chance. Let me tell you, stranger, those charms are the only reason you've even survived thus far.`,
         options: [{
                 text: `<p>I already got past your guards, now it's your turn!</p>`,
@@ -339,7 +339,7 @@ const textNodes = [{
         // kitchen scene
         id: 10,
         text: `The kitchen, just like the previous room, is empty. You look around...`,
-        image: 'placeholder',
+        image: '<img src=assets/images/logo.jpg>',
         dialogue: `After getting a good look of things, you decide to...`,
         options: [{
                 text: `<p onclick="showItem('tooth'),addInventory('tooth')">There's no food here, but they seem big on luck. Maybe that tooth could be useful?</p>`,
@@ -362,7 +362,7 @@ const textNodes = [{
         // lucky castle wake-up scene
         id: 11,
         text: `Upon waking up, you find out one of your eyes is missing! Great way to wake up in the morning.`,
-        image: 'placeholder',
+        image: '<img src=assets/images/logo.jpg>',
         dialogue: `Do you try and find who did it, or will you continue exploring?`,
         options: [{
                 text: `<p>Head to the throne room</p>`,
@@ -382,7 +382,7 @@ const textNodes = [{
     {
         id: 12,
         text: `It's the second person you've ever met here, and it's hard to call it a "person". Before you stands a hulking beast, with a deer's skull for a head. Despite its appearance, though, you can tell it means no harm`,
-        image: 'placeholder',
+        image: '<img src=assets/images/logo.jpg>',
         dialogue: `The being says: "You're a long way from home, I can tell, but where you stand now is closer to home...though not quite. Fortune and misfortune live in opposite dimensions in most of this realm, but they merge here. That's the voice from before!"`,
         options: [{
                 text: `<p>Wait, if things are by chance here, why did you tell me I needed a charm?</p>`,
@@ -398,7 +398,7 @@ const textNodes = [{
     {
         id: 13,
         text: `The voices become almost, but not quite, intelligable as you focus on listening. They sound like buzzing, growing louder and louder, at the same rate they become clear.`,
-        image: 'placeholder',
+        image: '<img src=assets/images/logo.jpg>',
         dialogue: `"I can almost understand what they're saying..."`,
         options: [{
                 text: `<p>Keep listening, I'm so close!</p>`,
@@ -417,7 +417,7 @@ const textNodes = [{
     {
         id: 14,
         text: `This being, who you could only assume was the king, folds in an instant -- a corpse at first, and then nothing at all.`,
-        image: 'placeholder',
+        image: '<img src=assets/images/logo.jpg>',
         dialogue: `A force compels you to sit on the throne...`,
         options: [{
             text: `<p>Take a seat...</p>`,
@@ -428,7 +428,7 @@ const textNodes = [{
     {
         id: 15,
         text: `"In the old days, and I can only assume where you're from, fortune and misfortune could fall at random. A long, long time ago, I separated the two entirely -- luck thrives uninterrupted.`,
-        image: 'placeholder',
+        image: '<img src=assets/images/logo.jpg>',
         dialogue: `You can tell he's telling the truth, it must be why the old man told you to pick up the coin. Still, you can practically feel -- physically -- the misery and regret in his voice.`,
         options: [{
                 text: `<p>"If we both disregard our charms, though, won't that bring things back to normal?"</p>`,
@@ -444,7 +444,7 @@ const textNodes = [{
     {
         id: 16,
         text: `As you finish snooping around, a man bursts into the kitchen! From his outfit and general look, it's clear he's the chef.`,
-        image: 'placeholder',
+        image: '<img src=assets/images/logo.jpg>',
         dialogue: `"What do you think you're doing here! Get out -- now!`,
         options: [{
                 text: `<p>"Wait! I can help you with the food!</p>`,
@@ -464,7 +464,7 @@ const textNodes = [{
     {
         id: 17,
         text: `After what feels like hours of searching, you come across a lone room. Upon opening the door, you find none other than the apothecary! He drops your eye into a concoction as you enter. However, he doesn't seem that malice, just very...dedicated.`,
-        image: 'placeholder',
+        image: '<img src=assets/images/logo.jpg>',
         dialogue: `"A thousand apologies, but being an outlander...well, your eye made for a quite potent reagent. Still, you need to see, and I have this crystal eye that can do the job just as well! It's lucky, too.`,
         options: [{
                 text: `<p>"Everything is 'lucky' here. Fine, I'll take it.</p>`,
@@ -495,7 +495,7 @@ const textNodes = [{
         // further dialogue from forest spirit
         id: 18,
         text: `The being seems to look at you, but at the same time, he never seems to look at you -- as if he's looking <i>through</i> you.`,
-        image: 'placeholder',
+        image: '<img src=assets/images/logo.jpg>',
         dialogue: `<p>"This world has been separated, 'ordered', for a long time; here, right here, you stand on the knife's edge of both fortune and misfortune. Nothing is guaranteed, as it is out there, but whatever happens will be an extreme."</p>`,
         options: [{
                 text: `<p>Then how do I leave it?</p>`,
@@ -514,7 +514,7 @@ const textNodes = [{
     {
         id: 19,
         text: `You can tell the creature was pleased by that question, although you're not sure <i>how</i> you can tell, as the deer skull head stays emotionless.`,
-        image: 'placeholder',
+        image: '<img src=assets/images/logo.jpg>',
         dialogue: `"After a time. There is work for you to do before any of that can happen. This, the heart of the forest, is the last place without the separation; but the larger this circle of untamed chance, or as you would know it, normalcy, grows, the more mundane its effects. This world can be natural again, but the core of its excessive order must be uprooted. <br><br> <h1>By that, I mean the king.</h1>`,
         options: [{
                 text: `<p>Killing the king? How will that do anything?</p>`,
@@ -538,7 +538,7 @@ const textNodes = [{
     {
         id: 20,
         text: `Buzzing. Buzzing. Buzzing. "Chance!", buzzing. "Roll!", buzzing. Buzzing. Constant, monotonous buzzing. Soon, it's as if you have a hive, no, two hives, of bees inside your mind, swarming and stinging your brain.`,
-        image: 'placeholder',
+        image: '<img src=assets/images/logo.jpg>',
         dialogue: `As madness consumes you, so does the forest. In moments, you become another one of its dense foliage, your voice caught on the wind and carried with it, never able to speak again without a gust of air.`,
         options: [{
             text: `<p>"Home..."</p>`,
@@ -582,7 +582,7 @@ const textNodes = [{
     {
         id: 22,
         text: `"Wait...yes, that might work. Well, nothing to lose by trying it, at least." In an instant, he's lunging at you -- more like a starved animal than a person.`,
-        image: 'placeholder',
+        image: '<img src=assets/images/logo.jpg>',
         dialogue: `"Essence of the old world is a precious resource, moreso than gold," He says, more to justify his actions to himself than anything, "I'd be a fool to pass up the opportunity"`,
         options: [{
                 text: `<p>Fight back</p>`,
@@ -622,7 +622,7 @@ const textNodes = [{
     {
         id: 23,
         text: `"Then you serve no purpose for me," The creature says, matter of factly. Within seconds, the roots surrounding you emerge, consuming you like a leviathan would a ship.`,
-        image: 'placeholder',
+        image: '<img src=assets/images/logo.jpg>',
         dialogue: `As the last light fades, you can feel yourself becoming part of the forests.`,
         options: [{
             text: `<p>You're a tree now.</p>`,
@@ -637,7 +637,7 @@ const textNodes = [{
     {
         id: 24,
         text: `The king looks at you as if you just stabbed him in the stomach.`,
-        image: 'placeholder',
+        image: '<img src=assets/images/logo.jpg>',
         dialogue: `"Why? To end the uncertainty of life, to make things...more stable."`,
         options: [{
             text: `<p>Well, if we both take off our charms, maybe that will make things normal again?</p>`,
@@ -650,7 +650,7 @@ const textNodes = [{
     {
         id: 25,
         text: `The chef looks at you with a raised eyebrow`,
-        image: 'placeholder',
+        image: '<img src=assets/images/logo.jpg>',
         dialogue: `"You read it? Good, then make yourself useful!"`,
         options: [{
             text: `<p>Get cooking</p>`,
@@ -664,7 +664,7 @@ const textNodes = [{
     {
         id: 26,
         text: `You've done it now, you killed the apothecary.`,
-        image: 'placeholder',
+        image: '<img src=assets/images/logo.jpg>',
         dialogue: `Blood is on your hands, why did you do it?`,
         options: [{
             text: `<p>I wanted revenge, now I'm taking this potion and eye!</p>`,
@@ -679,7 +679,7 @@ const textNodes = [{
     {
         id: 27,
         text: `The eye sits in your hands, staring back at you`,
-        image: 'placeholder',
+        image: '<img src=assets/images/logo.jpg>',
         dialogue: `You place it in your pocket, and as you look at the apothecary, he's vanished`,
         options: [{
             text: `<p onclick="addInventory('eye'),showItem('eye')">Turn back towards the castle center</p>`,
@@ -690,7 +690,7 @@ const textNodes = [{
     {
         id: 28,
         text: `The potion takes effect instantly, although everything it does is still a mystery to you. Still, there's no blurring anymore, and you can see what seem to be spirits around you`,
-        image: 'placeholder',
+        image: '<img src=assets/images/logo.jpg>',
         dialogue: `As you try to talk to the ghosts around you, they ignore you. Or maybe they simply can't hear you.`,
         options: [{
             text: `<p>Head back to the castle center</p>`,
@@ -701,7 +701,7 @@ const textNodes = [{
     {
         id: 29,
         text: `The creature looks at you in a way that says, 'How do you not know this?'`,
-        image: 'placeholder',
+        image: '<img src=assets/images/logo.jpg>',
         dialogue: `"Barring exceptionally powerful beings, anyone whose luck isn't exactly matched are kept from each other, put into their own sort of reality."`,
         options: [{
                 text: `<p>So I'm alone here? Let me out!</p>`,
@@ -717,7 +717,7 @@ const textNodes = [{
     {
         id: 30,
         text: `The creature seems totally expressionless now, but he does respond`,
-        image: 'placeholder',
+        image: '<img src=assets/images/logo.jpg>',
         dialogue: `"Bloodshed and guilt lead me here. But you will have something similar, if you kill the king.`,
         options: [{
                 text: `<p>Fine, I'll do it.</p>`,
@@ -733,7 +733,7 @@ const textNodes = [{
     {
         id: 31,
         text: `"It isn't about revenge," He says, tilting his head, "It's about mercy. He's pretended to be a god for millennia, and now it weighs on him as heavily as the rest of us."`,
-        image: 'placeholder',
+        image: '<img src=assets/images/logo.jpg>',
         dialogue: `"Striking him down is the only way to restore the natural order."`,
         options: [{
                 text: `<p>No, that's wrong!</p>`,
@@ -749,7 +749,7 @@ const textNodes = [{
     {
         id: 32,
         text: `You're not match for the creature, and he kills you instantly.`,
-        image: 'placeholder',
+        image: '<img src=assets/images/logo.jpg>',
         dialogue: `It's over in a second -- a straight cut to black.`,
         options: [{
             text: `<p>You died</p>`,
@@ -763,7 +763,7 @@ const textNodes = [{
     {
         id: 33,
         text: `Good, take this charm and be on your way.`,
-        image: 'placeholder',
+        image: '<img src=assets/images/logo.jpg>',
         dialogue: `The creature gives you a rabbit's foot, how...cliche`,
         options: [{
             text: `<p onclick="addInventory('foot'),showItem('foot')">You head towards the castle</p>`,
@@ -777,7 +777,7 @@ const textNodes = [{
     {
         id: 34,
         text: `Your strike lands true, and the man, however strong he might have used to be, is weakened by his unnaturally long life. He crumples to the floor, and in an instant his body vanishes, leaving only his crown.`,
-        image: 'placeholder',
+        image: '<img src=assets/images/logo.jpg>',
         dialogue: `Your hands move to the crown without thinking, and in an instant you have total control...and in another instant, you lose it. All you can do now is return things to normal.`,
         options: [{
             text: `<p onclick="addInventory('crown'),showItem('crown')>Then let's return the world to nature.</p>`,
@@ -791,7 +791,7 @@ const textNodes = [{
     {
         id: 35,
         text: `Your cooking skills are impressive. In fact, they're too impressive.`,
-        image: 'placeholder',
+        image: '<img src=assets/images/logo.jpg>',
         dialogue: `The chef, as your back is turned, puts his hat on you -- locking you into his role for eternity.`,
         options: [{
             text: `<p>You live the rest of your existence as a spirit trapped in a husk</p>`,
@@ -802,7 +802,7 @@ const textNodes = [{
     {
         id: 100,
         text: `The world returns to nature, and suddenly you're back...home. Everything is back where it should be.`,
-        image: 'placeholder',
+        image: '<img src=assets/images/logo.jpg>',
         dialogue: ``,
         options: [{
             text: `<p>The end! Go to the summary</a>`,
@@ -813,7 +813,7 @@ const textNodes = [{
     {
         id: -1,
         text: `In this world of chance, the lucky thrive and the unlucky...well, you just found out. But you can always take another...</p>`,
-        image: 'placeholder',
+        image: '<img src=assets/images/logo.jpg>',
         dialogue: ``,
         options: [{
             text: `<a href="index.html">Summary</a>`,
@@ -824,7 +824,7 @@ const textNodes = [{
     {
         id: -2,
         text: `<p>Perhaps you rule benevolently, or perhaps you take out all your anger on your people. Regardless, unless someone ends your rule, you will be king for eternity.</p>`,
-        image: 'placeholder',
+        image: '<img src=assets/images/logo.jpg>',
         dialogue: `It's good to be in charge.`,
         options: [{
             text: `<a href="index.html">Replay?</a>`,
