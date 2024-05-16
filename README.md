@@ -5,7 +5,7 @@
 
 ![generated mock up of A Small Adventure!](doc/readme-images/mockup.png)
 
-[Click here to view the deployed Page](https://tommyspecs.github.io/rock-paper-scissors-lizard-spock/)
+[Click here to view the deployed Page](https://acelliott1218.github.io/a-small-adventure)
 
 ---
 
@@ -53,104 +53,29 @@
 - To ensure the game is fully compliant with screen readers
 
 ### *Planned Features*
-- Responsive Design - The site should function correctly not matter which device a user could potentially use, such as Desktop, Laptop, Tablet and Mobile.
-- All navigation elements should be obvious on the site. 
-- Two difficulty levels should be available
-- The user should be able to select the number of rounds to play
-- The site should be fully accessible for screen reader users
+- Responsive Design - users should not have to force desktop mode, or switch to smaller devices, to play the game.
+- Color contrast between main game area, inventory area, text, and options buttons to keep things easily readable
+- Ability to return to the instructions page
 
-### *Planned Implementation*
-
-#### User Story: 
-  - As a user I want a fun and simple game to play
-#### Acceptance Criteria
-  - The site should show clearly that it is a game.
-  - Clearly show how it the game is played.
-#### Planned Implementation
-  - Incorporate game elements such as interactive buttons that provide changes to a score, choices of difficulty, round options and a game over screen.
-  - Incorporate a clearly marked rules button that will take the user to a clearly written rules screen.
-
-#### User Story:
-  -  As a user I want to find my way around the site with ease
-#### Acceptance Criteria
-  - Areas of the site need to be clearly labeled.
-  - Have the ability to return to a "home" point.  
-#### Planned Implementation
-  - Incorporate large bold titles that can be cleaarly seen.
-  - Incorpoerate eye catching, well labelled buttons that lead the user to their desired location.
-
-#### User Story:
-  - As a user I want to be able to control the time it takes to play the game
-#### Acceptance Criteria
-  - Provide an ability to control the length of time a game takes.
-#### Planned Implementation
-  - Incorporate an ability for the user to choose how many rounds a game should take.
-
-#### User Story: 
-  - As a user I want to be able to play a more challenging version of the game
-#### Acceptance Criteria
-  - Provide the user a choice of difficulties 
-#### Planned Implementation
-  - Incorporate at least two modes of the game one slightly more challenging than the other.  
-
-#### User Story:
-- As a user I want to be able to use a screen reader to help me play the game
-#### Acceptance Criteria
-  - Ensure that the site has a high accesibilty level.
-#### Planned Implementation
-  - Ensure any images have alt elements.
-  - Implement a colour scheme that contrasts well with the background
-  - Ensure the foreground is not distracted by the backgroud.
----
 
 ## ***User Experience Design (UXD)***
 
-### *Wire Frame*
-Balsamiq was utilised to produce wireframes of how the game would appear across different devices. 
-Although the game is intended to be contained within one page, I produced wireframes for the different content that would appear on the page. 
-Using Balsamiq helped me to consider many different layouts for the game elements before choosing the final design.
 
-#### *Main Menu*
-![Wire frame Mock-up of the Menu Modal (Desktop)](doc/readme-images/wireframe-menu-Desktop.png)
-![Wire frame Mock-up of the Menu Modal (Mobile and Tablet)](doc/readme-images/wireframe-menu-tablet-mobile.png)
-
-#### *Rules Modal*
-![Wire frame Mock-up of the Rules Modal (Desktop)](doc/readme-images/wireframe-rules-desktop.png)
-![Wire frame Mock-up of the Rules Modal (Mobile and Tablet)](doc/readme-images/wireframe-rules-tablet-mobile.png)
-
-#### *Lives Modal*
-![Wire frame Mock-up of the Lives Modal (Desktop)](doc/readme-images/wireframe-lives-desktop.png)
-![ire frame Mock-up of the Lives Modal (Mobile and Tablet)](doc/readme-images/wireframe-lives-tablet-mobile.png)
-
-#### *Easy Game*
-![Wire frame Mock-up of the Easy Game Screen (Desktop)](doc/readme-images/wireframe-game-screen-easy-desktop.png)
-![ire frame Mock-up of the Easy Game Screen (Mobile and Tablet)](doc/readme-images/wireframe-game-screen-easy-tablet-mobile.png)
-
-#### *Hard Game*
-![Wire frame Mock-up of the Hard Game Screen (Desktop)](doc/readme-images/wireframe-game-screen-hard-desktop.png)
-![ire frame Mock-up of the Hard Game Screen (Mobile and Tablet)](doc/readme-images/wireframe-game-screen-hard-tablet-mobile.png)
-
-#### *Game Over Modal*
-![Wire frame Mock-up of the Game Over Modal (Desktop)](doc/readme-images/wireframe-gameover-desktop.png)
-![ire frame Mock-up of the Game Over (Mobile and Tablet)](doc/readme-images/wireframe-gameover-tablet-mobile.png)
 
 
 ### *Colour Scheme*
-This colour scheme was chosen as it is bright and joyful. It is inviting for children and contrasts well against plain background colours ensuring those with assecibilty concerns can stil use the site.
+The color scheme was chosen based on utility, eg, ease of contrast between the various elements. 
 ![Colour Palette part one](doc/readme-images/colorPalette1.png)
 ![Colour Palette part two](doc/readme-images/colorPalette2.png)
 
 ### *Design*
-Once happy with the overall structure for the site, and the colour scheme chosen the planne implementations were followed to produce a site which stuck to the acceptance criteria laid out.
-The buttons were designed to be large and colourful and also interactive to keep interest and to invite the user to press it.
-The game icons where in corporated into the rules so that it was clear and easy to understand how the game is played.
-Text was kept to one colour so that the user can notice the text easily aginst the colours of the site.
+The site was created to be relatively simple, with the base HTML acting as a skeleton and its content dictated by the Javascript functions. In retrospect, relying so heavily on this kind of dynamic HTML was biting off more than I could chew. Regardless, the focus of the site is on the story, rather than graphic elements (which are planned to be enhanced later).
 
 ### *Typography*
-Google fonts were used to find a combination of fonts that would be clear for the user, but still conveying an element of fun. The fonts "Bebas Neue" and "josefin-sans" were eventually chosen.
+Basic fonts were chosen, largely for the small performance in runtime. 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif.
 
 ### *Image Sourcing*
-The icons used for the game were gathered from the fomtAwesome site and the image used in the rules was found from a google image search.
+All images were created from Bing's AI generator.
 
 ---
 
@@ -158,82 +83,23 @@ The icons used for the game were gathered from the fomtAwesome site and the imag
 Website features are the many individual components that make up the site, making it easy to navigate, functional and valuable to visitors. 
 ### *General Features*
 Favicon
-The favicon is a small image that can be seen on the top left of the visitors tab when they have the site open. It is used to mark the site if the visitor has multiple tabs open in their browser, allowing them to find LychParlour photography easily. 
+The favicon, a small image resting off to the left of the page title, allows users (especially with a lot of tabs) to easily find the site.
 
+Responsive HTML
+Rather than having many different HTML presets, A Small Adventure depends on textNode support within the Javascript file its self. This also allows for ease of readability, rather than using excessive if-else statements. 
 
-Mention what a modal is?
----A modal (also called a modal window or lightbox) is a web page element that displays in front of and deactivates all other page content. To return to the main content, the user must engage with the modal by completing an action or by closing it. Modals are often used to direct users’ attention to an important action or piece of information on a website or application.
-
-The purpose of modals can be summed up in one word: focus. If you need visitors to focus on something simple, a modal window is one of the most effective means to do so. Users must either close the modal, or complete a specific action within it (e.g., reading a message and clicking “OK”, filling out a form, etc.).
-
-Modals are polarizing among designers and users alike. Many find value in their ability to quickly bring attention to something essential, while others regard them as an unwelcome interruption to the user experience.
-
-In practice, it all depends on whether the modal is well-designed and purposeful. When done right, they can be a helpful technique for both your users and for your numbers: According to a recent study of nearly 2 billion modal popups, the top 10% best-performers converted at a remarkable rate of 9.28%.
-
-Benefits of Modals
-Aside from channeling focus, modals present additional benefits over other display elements.
-
-Simplicity
-Modals keep things simple. Everything stays within one tab, helping visitors stay connected with what they were doing before the modal appeared.
-
-Visibility
-Since modals appear within the user’s active tab, you can be sure it will be seen. If instead the prompt were to appear in a new window, the user could miss it or instinctively close the new window after being conditioned by annoying ad popups.
-
-Flexibility
-Modals also help preserve page space by displaying featured media, like images or videos, in a lightbox.---
-
-
-main menu
-- title
-- subtitle
-- easy button
-- hard button
-- rules button
-- lives button
-
-rules modal
-- title
-- rules
-- image
-- cross
-
-lives modal
- - title
- - slider
- - life counter
- - easy buttom
-  - hard button
-  - menu button 
-
-main game
-- title
-- player instruction
-- player choice button
-  - vary on difficulty
-- results section
-  - life number
-  - result
-  
-game over Modal
-- title
-- gamover result
-- game over message
-- meu button
+Inventory System
+The game incorporates the inventory system, as some items lead to choices later on, and getting all items + the potion is required to get the secret ending.
 
 ### *Future Enhancements*
-This to add to Rochambeu in the future may include, swapping the number of lives out for heart icons that reduce in number when lives are lost
-potentiall a story to make the game more enticing
-animation to increase the level of interactivity the user gets when usoing the site
+Changing the onclick use of the functions, such as inventoryAdd() or itemShow(), to something more dependable. Most of the development time was spent trying to find an alternative to this, and in the future it will be replaced.
+
+Switching the textNode system to an if-else system. While the textNode system was chosen because of its easier readability, its overall fragility makes it excessively difficult to target its content without breaking the entire game. 
 
 ---
 
 ### *Acessibility*
-I have been mindful during coding to ensure that the website is as accessible and friendly as possible. I have achieved this by:
-
-Using semantic HTML, CSS and JavaScript
-Using descriptive alt attributes on images on the site.
-Ensuring that there is a sufficient colour contrast throughout the site.
-Ensuring menus are accessible by marking the current page as current for screen readers.
+Alt text has been added to the logo and various other images. Otherwise, the game depends mostly on reading, which is inherently screen-reader friendly.
 
 ---
 
@@ -245,11 +111,8 @@ HTML, CSS and Javascript were used to create this website.
 
 ### *Frameworks, Libraries & Programs Used*
 - Github - To save and store the files for the site.
-- Google Fonts - To import the fonts used on the site.
-- Font Awesome - For the iconography on the site.
-- Google Dev Tools - To troubleshoot and test features, solve issues with responsiveness and styling.
+- Bing AI - to generate the images used in this project.
 - favicon.io - To create the favicon for the site
-- Balsamiq - Used to create wire framed designs for the site
 - techsini.com - Used to create the mock up on multiple devices
 - coolors.co - used to generate the colour pallete for the site
 
@@ -260,20 +123,6 @@ Please [click](https://github.com/TommySpecs/rock-paper-scissors-lizard-spock/bl
 
 ---
 
-## ***Deployment***
-Github Pages were used to deploy the live website. The instructions to achieve this are:
-
-- Log in (or sign up) to Github.
-- Find the repository for this project.
-- Click on the Settings link.
-- Click on the Pages link in the navigation bar on the left.
-- In the Source section, choose main from the drop down select branch menu.
-- Select Root from the drop down select folder menu.
-- Click Save.
-- Your live Github Pages site is now deployed at the URL shown.
-- With each new commit and git push the deployed site will update.
-
-The live link can be found [here](https://tommyspecs.github.io/rock-paper-scissors-lizard-spock/)
 
 ---
 
@@ -281,19 +130,9 @@ The live link can be found [here](https://tommyspecs.github.io/rock-paper-scisso
 
 ### *Content*
 - https://www.color-hex.com/color-palette/15897 - colour scheme
-- https://www.youtube.com/watch?v=3uKdQx-SZ5A  - Rock, Paper, Scissors (1) -didn’t work for me
-- https://www.youtube.com/watch?v=lV2BMXdsDmc
-- https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener
-- https://www.w3schools.com/howto/howto_css_modals.asp
-- https://www.w3schools.com/js/js_if_else.asp
-- https://developer.mozilla. /en-US/docs/Web/HTML/Element/input/range
-- https://www.w3schools.com/js/js_htmldom_eventlistener.asp
-- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Less_than
-- https://www.w3schools.com/css/css3_borders.asp
-- https://www.pgpedia.com/r/rock-paper-scissors#:~:text=The%20rock%20is%20a%20closed,and%20scissors%20wins%20against%20paper.
-- https://blog.hubspot.com/website/modal-web-design
-- https://jshint.com/docs/
+- https://www.youtube.com/watch?v=R1S_NhKkvGA - project built from this basis
+- 
 
 
 ### *Media*
-https://bigbangtheory.fandom.com/wiki/Rock,_Paper,_Scissors,_Lizard,_Spock - rock paper scissors lizard spock image
+- https://www.bing.com/?toWww=1&redig=B9CB799792EF45A9AD75867943974B67 - media

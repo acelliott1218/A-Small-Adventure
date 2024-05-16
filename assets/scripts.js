@@ -77,6 +77,7 @@ function delItem(a) {
     }
 }
 
+
 /**
  * shows the acquired items in the player's inventory on the other page 
 */
@@ -564,23 +565,16 @@ const textNodes = [{
         id: 21,
         text: `It feels right. It feels good, powerful. The same force that compelled you to sit demands you put on the old, raggedy crown that...well, whoever the last occupant of this chair wore.`,
         image: ``,
-        dialogue: `As the crown touches your head, a full view of the two dimensions -- of fortune and misfortune -- is clear as day to you; all that is, will be, can be, should be, all yours to decide.`,
+        dialogue: `All that is, will be, can be, should be, all yours to decide.`,
         options: [{
-                text: `<p onclick="addInventory('crown'),showItem('crown')>Full power! This is my world now!</p>`,
+                text: `<p onclick="addInventory('crown'),showItem('crown')">Power!</p>`,
                 nextText: -2,
                 setState: {
                     tyrant: true
                 }
             },
             {
-                text: `<p onclick="addInventory('crown'),showItem('crown')>I can make things better, something more ideal.</p>`,
-                nextText: -2,
-                setState: {
-                    idealist: true
-                }
-            },
-            {
-                text: `<p onclick="addInventory('crown'),showItem('crown')>I can bring the natural world back and end the separation!</p>`,
+                text: `<p onclick="addInventory('crown'),showItem('crown')">Nature!</p>`,
                 nextText: 100,
                 setState: {
                     naturalDisorder: true
@@ -661,7 +655,7 @@ const textNodes = [{
         image: '<img src=assets/images/logo.jpg alt="The game logo, black and white with lucky symbols on one side, unlucky ones on the other">',
         dialogue: `Blood is on your hands, why did you do it?`,
         options: [{
-            text: `<p>I wanted revenge, now I'm taking this potion and eye!</p>`,
+            text: `<p onclick="addInventory('eye'), showItem('eye')">I wanted revenge, now I'm taking this potion and eye!</p>`,
             nextText: 28,
             setState: {
                 potion: true,
@@ -774,7 +768,7 @@ const textNodes = [{
         image: '<img src=assets/images/logo.jpg alt="The game logo, black and white with lucky symbols on one side, unlucky ones on the other">',
         dialogue: `Your hands move to the crown without thinking, and in an instant you have total control...and in another instant, you lose it. All you can do now is return things to normal.`,
         options: [{
-            text: `<p onclick="addInventory('crown'),showItem('crown')>Then let's return the world to nature.</p>`,
+            text: `<p onclick="showItem('crown'), inventoryAdd('crown')">Victory!</p>`,
             nextText: 100,
             setState: {
                 crown: true,
@@ -799,7 +793,7 @@ const textNodes = [{
         image: '<img src=assets/images/logo.jpg alt="The game logo, black and white with lucky symbols on one side, unlucky ones on the other">',
         dialogue: ``,
         options: [{
-            text: `<p>The end! Go to the summary</a>`,
+            text: `<p>The end! Play again?</a>`,
             nextText: -1,
         }, ]
     },
