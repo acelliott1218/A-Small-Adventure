@@ -56,7 +56,7 @@ div#option-buttons {
 
 /* shows which option is currently being moused over */
 .btn:hover {
-    border-color:black;
+    border-color:#000000;
 }
 
 #landing {
@@ -94,7 +94,7 @@ div#image {
 
 
 #inventory-images {
-    background-color: saddlebrown;
+    background-color: #8b4513;
     max-width: 7rem;
     display: flex;
     flex-direction: row;
@@ -117,7 +117,7 @@ button#replay-btn {
 
 a:visited{
     text-decoration:none;
-    color:white;
+    color:#ffffff;
 }
 
 a:active{

@@ -3,7 +3,7 @@
 ## ***Introduction***
 "A small adventure" is a choose-your-own adventure game based in a world where, instead of things being left to chance, fortune and misfortune are hard-divided. In its current iteration, the main goal of the story is to return this world to its natural state. There is also a secret ending where the player can instead rule the world as it is.
 
-![generated mock up of A Small Adventure!](doc/readme-images/mockup.png)
+![generated mock up of A Small Adventure!](doc/readme-images/mockup.jpg)
 
 [Click here to view the deployed Page](https://acelliott1218.github.io/A-Small-Adventure/)
 
@@ -60,19 +60,18 @@
 
 ## ***User Experience Design (UXD)***
 ### Guide
-
+![Guide](doc/readme-images/guide.jpg)
 ### Choices Matter
-
+It is possible, and expected, that players will lose their game repeatedly -- further, it's completely possible that they will never see the secret ending. In fact, even the regular ending is hard to achieve. This is by design, and to increase replayability in a relatively small game.
 ### Inventory
-
+![Inventory](doc/readme-images/inventory.jpg)
 ### Winning
-
+![Victory Screen](doc/readme-images/victory.jpg)
 ### Losing
-
+![Defeat screen](doc/readme-images/defeat.jpg)
 ### *Colour Scheme*
 The color scheme was chosen based on utility, eg, ease of contrast between the various elements. 
-![Colour Palette part one](doc/readme-images/colorPalette1.png)
-![Colour Palette part two](doc/readme-images/colorPalette2.png)
+![Colour Palette](doc/readme-images/colorpalette1.png)
 
 ### *Design*
 The site was created to be relatively simple, with the base HTML acting as a skeleton and its content dictated by the Javascript functions. In retrospect, relying so heavily on this kind of dynamic HTML was biting off more than I could chew. Regardless, the focus of the site is on the story, rather than graphic elements (which are planned to be enhanced later).
@@ -120,7 +119,6 @@ HTML, CSS and Javascript were used to create this website.
 - Bing AI - to generate the images used in this project.
 - favicon.io - To create the favicon for the site
 - techsini.com - Used to create the mock up on multiple devices
-- coolors.co - used to generate the colour pallete for the site
 
 ---
 
@@ -130,7 +128,7 @@ Please [click](https://github.com/acelliott1218/A-Small-Adventure/blob/main/test
 ---
 
 
----
+
 
 ## ***Credits***
 

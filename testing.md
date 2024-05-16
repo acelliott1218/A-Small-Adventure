@@ -26,7 +26,8 @@
 
 W3C was used to validate the HTML of the ROCHAMBEAU! site. I  checked the HTML via direct input and also by copying the page source and running these through the validator.
 
-![W3C HTML validation](doc/testing-images/html-validation.png)
+![W3C HTML validation](doc/readme-images/html1.jpg)
+![W3C HTML validation](doc/readme-images/html2.jpg)
 
 *several info messages popped up these are caused by the formatting and are unable to be removed.
 
@@ -35,34 +36,22 @@ W3C was used to validate the HTML of the ROCHAMBEAU! site. I  checked the HTML v
 #### *CSS*
 CSS Validation can only be done by copying and pasting the CSS file contents into the direct input.
 
-![W3C CSS validation](doc/testing-images/css-validation.png)
+![W3C CSS validation](doc/readme-images/css.jpg)
 
 ---
 ## JSHint
 ### *Javascript*
 JSHint is a program that flags suspicious usage in programs written in JavaScript. 
 
-![JSHint Validation](doc/testing-images/jshint-validation.png)
+![JSHint Validation](doc/readme-images/jshint.jpg)
 
----
+These variables are used, but the program had a hard time understanding that due to the structure of the textNodes.
 
-## *Lighthouse*
-
-Lighthouse was used which is found within the Chrome Developer Tools to allow me to test the performance, accessibility and SEO of the website.
-
-![Lighthouse validation](doc/testing-images/lighthouse.png)
-
- ---
-
-## *Wave*
- WAVE is a suite of evaluation tools that helps authors make their web content more accessible to individuals with disabilities.
-
-![Wavevalidation](doc/testing-images/wave-validation.png)
 
 ---
 ## Manual testing
 
-Some of the website functions needed to be tested manually, such as links around the page or the functionality and responsivness of added features. 
+Some of the website functions needed to be tested manually, namely the game its self.
 
 ### *Devices Used*
 
