@@ -65,7 +65,6 @@ div#option-buttons {
 
 #start-btn {
     position:relative;
-    position:center;
 }
 
 #button-div {
@@ -85,7 +84,6 @@ button#start-btn {
 
 img {
     max-width:50%;
-    max-height:auto;
     margin-top:3%;
 }
 
@@ -108,4 +106,12 @@ div#image {
 
 .items {
     visibility:hidden;
+}
+
+#summary-text {
+    background-color: white;
+}
+
+button#replay-btn {
+    width: 100%;
 }
