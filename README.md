@@ -1,11 +1,11 @@
-# ***ROCHAMBEAU!***
+# ***A Small Adventure!***
 
 ## ***Introduction***
 "A small adventure" is a choose-your-own adventure game based in a world where, instead of things being left to chance, fortune and misfortune are hard-divided. In its current iteration, the main goal of the story is to return this world to its natural state. There is also a secret ending where the player can instead rule the world as it is.
 
 ![generated mock up of A Small Adventure!](doc/readme-images/mockup.png)
 
-[Click here to view the deployed Page](https://acelliott1218.github.io/a-small-adventure)
+[Click here to view the deployed Page](https://acelliott1218.github.io/A-Small-Adventure/)
 
 ---
 
@@ -17,13 +17,13 @@
   - [***User Experience*** (UX)](#user-experience-ux)
     - [*Site Goals*](#site-goals)
     - [*Planned Features*](#planned-features)
-    - [*Planned Implementation*](#planned-implementation)
   - [***User Experience Design (UXD)***](#user-experience-design-uxd)
       - [*Instructions on How to Play*](#guide)
       - [*Buttons Show only on Certain Prior Choices*](#choices-matter)
       - [*Inventory System*](#inventory)
-      - [*Winner Screen*](#hard-game)
-      - [*Death Screen*](#game-over-modal)
+      - [*Winner Screen*](#winning)
+      - [*Death Screen*](#losing)
+      - [*Secret Ending*](#secret-ending)
     - [*Colour Scheme*](#colour-scheme)
     - [*Design*](#design)
     - [*Image Sourcing*](#image-sourcing)
@@ -59,9 +59,15 @@
 
 
 ## ***User Experience Design (UXD)***
+### Guide
 
+### Choices Matter
 
+### Inventory
 
+### Winning
+
+### Losing
 
 ### *Colour Scheme*
 The color scheme was chosen based on utility, eg, ease of contrast between the various elements. 

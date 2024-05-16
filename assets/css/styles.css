@@ -114,3 +114,7 @@ div#image {
 button#replay-btn {
     width: 100%;
 }
+
+#no-decoration{
+    text-decoration:none;
+}
