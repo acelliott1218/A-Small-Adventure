@@ -5,8 +5,6 @@
     - [W3C Validator](#w3c-validator)
     - [W3C CSS Validator](#css)
     - [Javascript Validator](#jshint)
-    - [Lighthouse](#lighthouse)
-    - [Wave](#wave)
 - [Manual Testing](#manual-testing)
     - [Devices Used](#devices-used)
     - [Browsers Used](#browsers-used)
@@ -128,3 +126,6 @@ Fixed an issue where a forgotten quotation-mark was preventing the secret ending
 
 #### Known bugs
 If the player clicks too fast through the options, the inventory system will not work. This is relatively small, since this game is based on reading, but if a player is zooming through the onclick events won't have time to catch up.
+
+### Credit
+Again, credit to [Tommy Specs](https://github.com/TommySpecs/rock-paper-scissors-lizard-spock) for the basis for this testing page too.
