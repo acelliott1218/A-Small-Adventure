@@ -114,6 +114,45 @@ Alt text has been added to the logo and various other images. Otherwise, the gam
 
 HTML, CSS and Javascript were used to create this website.
 
+## Deployment
+
+### Version Control
+
+The site was created using Codeanywhere at first and, later, Gitpod, and pushed to Git Hub to the remote repository ‘task-smasher’.
+
+The following git commands were used throughout development to push code to the remote repo:
+
+```git add .``` - This command was used to add all changes made during the development process
+
+```git commit -m “commit message”``` - Used to commit the changes added through git add, along with commentary outlining what each commit did
+
+```git push``` - Sent all committed changes to the remote repository on Github.com
+
+### Deployment to Github Pages
+
+- The site was deployed to GitHub pages. The steps to deploy are as follows: 
+  - In the GitHub repository, navigate to the Settings tab 
+  - From the menu on the left select 'Pages'
+  - From the source section drop-down menu, select the Branch: main
+  - Click 'Save'
+  - A live link will be displayed in a green banner when published successfully. 
+
+The live link can be found here - https://acelliott1218.github.io/A-Small-Adventure/
+
+### Clone the Repository Code Locally
+
+Navigate to the GitHub Repository you want to clone to use locally:
+
+- Click on the code drop-down button
+- Click on HTTPS
+- Copy the repository link to the clipboard
+- Open your IDE of choice (git must be installed for the next steps)
+- Type git clone copied-git-URL into the IDE terminal
+
+The project will now be cloned on your local machine for use.
+
+
+
 ### *Frameworks, Libraries & Programs Used*
 - Github - To save and store the files for the site.
 - Bing AI - to generate the images used in this project.
